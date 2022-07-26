@@ -11,17 +11,19 @@ class MockFlutterKgoVnpayPlatform
   Future<String?> getPlatformVersion() => Future.value('42');
 
   @override
-  Future<int?> show(
-      {required String paymentUrl,
-      required String tmnCode,
-      String scheme = '',
-      bool isSandbox = true,
-      String backAlert = 'Bạn có chắc chắn trở lại ko?',
-      String title = 'Nạp tiền qua VNPay',
-      String iconBackName = 'AppIcon',
-      String beginColor = '#00B14F',
-      String endColor = '#00B14F',
-      String titleColor = '#FFFFFF'}) {
+  Future<int?> show({
+    required String paymentUrl,
+    required String tmnCode,
+    String scheme = '',
+    bool isSandbox = true,
+    String backAlert = 'Bạn có chắc chắn trở lại ko?',
+    String title = 'Nạp tiền qua VNPay',
+    String iconBackName = 'AppIcon',
+    String beginColor = '#00B14F',
+    String endColor = '#00B14F',
+    String titleColor = '#FFFFFF',
+    void Function(int?)? codeCallback,
+  }) {
     throw UnimplementedError();
   }
 }

@@ -1,6 +1,6 @@
 name: flutter_kgo_vnpay
-description: A plugin to connect vnpay.
-version: 0.0.1+1
+description: A plugin to connect vnpay using the newest version vnpay sdk 1.0.25 android and 1.0.4 ios, working fine with app to app scheme.
+version: 0.0.2+3
 homepage: https://kgo.life
 
 environment:

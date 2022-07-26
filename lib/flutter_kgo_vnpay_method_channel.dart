@@ -43,6 +43,7 @@ class MethodChannelFlutterKgoVnpay extends FlutterKgoVnpayPlatform {
     String beginColor = '#438ff5',
     String endColor = '#438ff5',
     String titleColor = '#FFFFFF',
+    void Function(int?)? codeCallback,
   }) async {
     final params = <String, dynamic>{
       "scheme": scheme,
@@ -59,7 +60,9 @@ class MethodChannelFlutterKgoVnpay extends FlutterKgoVnpayPlatform {
     await methodChannel.invokeMethod('show', params);
     await for (MethodCall m in _methodStream) {
       if (m.method == "PaymentBack") {
-        return m.arguments['resultCode'] as int?;
+        final resultCode = m.arguments['resultCode'] as int?;
+        codeCallback?.call(resultCode);
+        return resultCode;
       }
     }
     return null;

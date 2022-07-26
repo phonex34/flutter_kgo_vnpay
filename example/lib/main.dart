@@ -61,7 +61,7 @@ class _MyAppState extends State<MyApp> {
                   onPressed: () {
                     _flutterKgoVnpayPlugin.show(
                       paymentUrl:
-                          'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=93830000&vnp_Command=pay&vnp_CreateDate=20220713172638&vnp_CurrCode=VND&vnp_IpAddr=27.72.98.245&vnp_Locale=vn&vnp_OrderInfo=Mua+bh+tnds+cho+xe+%2C+ma+don%3A+220713LNZHKU&vnp_ReturnUrl=https://kgo.life&vnp_TmnCode=xxx&vnp_TxnRef=1000013&vnp_Version=2.1.0&vnp_SecureHash=xxxx',
+                          'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=93830000&vnp_Command=pay&vnp_CreateDate=20220713172638&vnp_CurrCode=VND&vnp_IpAddr=27.72.98.245&vnp_Locale=vn&vnp_OrderInfo=Mua+bh+tnds+cho+xe+%2C+ma+don%3A+220713LNZHKU&vnp_ReturnUrl=httpsO://kgo.life&vnp_TmnCode=xxx&vnp_TxnRef=1000013&vnp_Version=2.1.0&vnp_SecureHash=xxxx',
                       tmnCode: 'kgoxxx',
                       scheme: 'kgo-vnpay',
                     );

@@ -16,17 +16,20 @@ class FlutterKgoVnpay {
     String beginColor = '#438ff5',
     String endColor = '#438ff5',
     String titleColor = '#FFFFFF',
+    void Function(int?)? codeCallback,
   }) async {
     return FlutterKgoVnpayPlatform.instance.show(
-        paymentUrl: paymentUrl,
-        tmnCode: tmnCode,
-        scheme: scheme,
-        isSandbox: isSandbox,
-        backAlert: backAlert,
-        title: title,
-        iconBackName: iconBackName,
-        beginColor: beginColor,
-        endColor: endColor,
-        titleColor: titleColor);
+      paymentUrl: paymentUrl,
+      tmnCode: tmnCode,
+      scheme: scheme,
+      isSandbox: isSandbox,
+      backAlert: backAlert,
+      title: title,
+      iconBackName: iconBackName,
+      beginColor: beginColor,
+      endColor: endColor,
+      titleColor: titleColor,
+      codeCallback: codeCallback,
+    );
   }
 }

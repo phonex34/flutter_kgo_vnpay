@@ -5,3 +5,15 @@
 ## 0.0.1+1
 
 - fix some README message
+
+## 0.0.2+1
+
+- add callback when show code and update readme using scheme
+
+## 0.0.2+2
+
+- hotfix not return callback
+
+## 0.0.2+3
+
+- fix some typo readme and pubspec

@@ -39,6 +39,7 @@ abstract class FlutterKgoVnpayPlatform extends PlatformInterface {
     String beginColor = '#00B14F',
     String endColor = '#00B14F',
     String titleColor = '#FFFFFF',
+    void Function(int?)? codeCallback,
   }) {
     throw UnimplementedError('show() has not been implemented.');
   }
